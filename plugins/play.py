@@ -364,11 +364,9 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
-                title,
-                duration,
+            caption="**𝗛𝗲𝘆 {} 𝗕𝗮𝗯𝘆 🙂 𝗜'𝗺 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✌️ 𝘂𝗿 𝗦𝗼𝗻𝗴 😎 𝗮𝘁 `{}`...".format(
                 message.from_user.mention(),
-                position,
+                message.chat.title,
             ),
             reply_markup=keyboard,
         )
@@ -377,8 +375,8 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**🏷️ Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
-                title, duration, message.from_user.mention(), message.chat.title
+            caption="**𝗛𝗲𝘆 {} 𝗕𝗮𝗯𝘆 🙂 𝗜'𝗺 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✌️ 𝘂𝗿 𝗦𝗼𝗻𝗴 😎 𝗮𝘁 `{}`...**".format(
+                message.from_user.mention(), message.chat.title
             ),
         )
 
