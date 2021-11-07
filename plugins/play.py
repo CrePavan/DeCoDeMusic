@@ -209,7 +209,7 @@ async def play(_, message: Message):
                     await USER.join_chat(invitelink)
                     await USER.send_message(
                         message.chat.id,
-                        "Assistant joined this group for playing music in VC",
+                        "𝗛𝗲𝘆 𝗘𝗺𝗶𝘅𝗶𝗻𝗮 𝗝𝗼𝗶𝗻𝗲𝗱 𝗨𝗿 𝗚𝗿𝗼𝘂𝗽, 𝗙𝗼𝗿 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝘂𝗿 𝗦𝗼𝗻𝗴𝘀..😎",
                     )
                     await lel.edit(
                         "<b>Assistant joined this chat</b>",
@@ -226,7 +226,7 @@ async def play(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>"
+            f"<i>𝗧𝗿𝘆 𝗮𝗴𝗮𝗶𝗻 𝗕𝗮𝗯𝘆 🙂 𝗮𝗻𝗱 𝗠𝗮𝗸𝗲 𝗦𝘂𝗿𝗲 𝗨 𝗮𝗱𝗱 𝗠𝘆 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁.</i>"
         )
         return
 
