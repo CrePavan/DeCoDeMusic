@@ -178,7 +178,7 @@ async def play(_, message: Message):
     if message.chat.id in DISABLED_GROUPS:
         await message.reply("**maintainence mode is on, ask admin to disable it!**")
         return
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("**𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗻𝗴...**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -252,7 +252,7 @@ async def play(_, message: Message):
 
         keyboard = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ", callback_data="cls")],
             ]
         )
 
@@ -286,7 +286,7 @@ async def play(_, message: Message):
 
             keyboard = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ", callback_data="cls")],
                 ]
             )
 
@@ -310,12 +310,12 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "🧐 **Song not found! Try searching with the correct title\nExample » /play In The End\n\nChannel : @DeCodeMusicBot**"
+                "**𝗡𝗮𝗮𝗺 𝗕𝗮𝘁𝗮 𝗕𝗮𝗯𝘆..🙂**"
             )
-        await lel.edit("🔎 **Finding the song...**")
+        await lel.edit("**𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴..**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("**𝗣𝗹𝗮𝘆𝗶𝗻𝗴...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -345,7 +345,7 @@ async def play(_, message: Message):
 
         keyboard = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ", callback_data="cls")],
             ]
         )
 
