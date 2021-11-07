@@ -252,10 +252,6 @@ async def play(_, message: Message):
 
         keyboard = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                    InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
-                ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
         )
@@ -290,10 +286,6 @@ async def play(_, message: Message):
 
             keyboard = InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                        InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
-                    ],
                     [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
                 ]
             )
@@ -353,10 +345,6 @@ async def play(_, message: Message):
 
         keyboard = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                    InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
-                ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
         )
