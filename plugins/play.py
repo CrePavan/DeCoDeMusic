@@ -178,7 +178,7 @@ async def play(_, message: Message):
     if message.chat.id in DISABLED_GROUPS:
         await message.reply("**maintainence mode is on, ask admin to disable it!**")
         return
-    lel = await message.reply("**𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗻𝗴...**")
+    lel = await message.reply("**𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗻𝗴 𝗕𝗿𝗼𝗸𝗲𝗻 𝗦𝗲𝗿𝘃𝗲𝗿..✌️**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -209,7 +209,7 @@ async def play(_, message: Message):
                     await USER.join_chat(invitelink)
                     await USER.send_message(
                         message.chat.id,
-                        "𝗛𝗲𝘆 𝗘𝗺𝗶𝘅𝗶𝗻𝗮 𝗝𝗼𝗶𝗻𝗲𝗱 𝗨𝗿 𝗚𝗿𝗼𝘂𝗽, 𝗙𝗼𝗿 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝘂𝗿 𝗦𝗼𝗻𝗴𝘀..😎",
+                        "𝗛𝗲𝘆 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬 𝗝𝗼𝗶𝗻𝗲𝗱 𝗨𝗿 𝗚𝗿𝗼𝘂𝗽, 𝗙𝗼𝗿 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝘂𝗿 𝗦𝗼𝗻𝗴𝘀..😎",
                     )
                     await lel.edit(
                         "<b>Assistant joined this chat</b>",
@@ -310,12 +310,12 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "**𝗡𝗮𝗮𝗺 𝗕𝗮𝘁𝗮 𝗕𝗮𝗯𝘆..🙂**"
+                "**𝗦𝗼𝗻𝗴 𝗡𝗮𝗺𝗲 𝗕𝗮𝘁𝗮 𝗕𝗮𝗯𝘆..🙃**"
             )
-        await lel.edit("**𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴..**")
+        await lel.edit("**𝗣𝗹𝗮𝘆 𝗯𝘆 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻..**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("**𝗣𝗹𝗮𝘆𝗶𝗻𝗴...**")
+        await lel.edit("**𝗟𝗮𝗴𝗮 𝗿𝗵𝗮 𝗵𝘂..😎**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -364,7 +364,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="🏷️ **𝗛𝗲𝘆 {} 𝗕𝗮𝗯𝘆 🙂 𝗜'𝗺 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✌️ 𝘂𝗿 𝗦𝗼𝗻𝗴 😎 𝗮𝘁 `{}`...".format(
+            caption="🏷️ **𝗛𝗲𝘆 {} 𝗕𝗮𝗯𝘆 🙂 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬 ❤️ 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 🚬 𝘂𝗿 𝗦𝗼𝗻𝗴 😎 𝗮𝘁 `{}`...".format(
                 message.from_user.mention(),
                 message.chat.title,
             ),
@@ -375,7 +375,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="🏷️ **𝗛𝗲𝘆 {} 𝗕𝗮𝗯𝘆 🙂 𝗜'𝗺 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✌️ 𝘂𝗿 𝗦𝗼𝗻𝗴 😎 𝗮𝘁 `{}`...**".format(
+            caption="🏷️ **𝗛𝗲𝘆 {} 𝗕𝗮𝗯𝘆 🙂 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬 ❤️ 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 🚬 𝘂𝗿 𝗦𝗼𝗻𝗴 😎 𝗮𝘁 `{}`...**".format(
                 message.from_user.mention(), message.chat.title
             ),
         )
