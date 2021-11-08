@@ -32,14 +32,14 @@ async def _human_time_duration(seconds):
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
         await message.reply_text(
-        f"""**Hᴇʏ, ɪ'ᴍ Bʀᴏᴋᴇɴ 2.0 Mᴜꜱɪᴄ
+        f"""**Hᴇʏ, ɪ'ᴍ [Bʀᴏᴋᴇɴ 2.0 Mᴜꜱɪᴄ](https://t.me/CrePavan)
 ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴘʀᴇᴍɪᴜᴍ sᴜᴘᴇʀғᴀsᴛ ᴀɴᴅ ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴠᴄ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ [ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ](https://t.me/CrePavan) ..🙂**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ɢʀᴜᴘ ➕",
+                        "➕ ᴀᴅᴅ ʙʀᴏᴋᴇɴ ᴛᴏ ᴜʀ ɢʀᴜᴘ ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ]
